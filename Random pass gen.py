@@ -15,7 +15,8 @@ def rand_pass(size):
     # ascii_letters and digits  
     generate_pass = ''.join([random.choice( string.ascii_uppercase +
                                             string.ascii_lowercase +
-                                            string.digits)  
+                                            string.digits +
+                                            string.punctuation)  
                                             for n in range(size)])  
                              
     return generate_pass  
