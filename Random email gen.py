@@ -21,5 +21,6 @@ def rand_pass(size):
     return generate_pass  
      
 # Driver Code   
-password = rand_pass(int(quantity)) 
-print(password + "@" + password + ".com")  
+password = rand_pass(int(quantity))
+password2 = rand_pass(int(quantity))
+print(password + "@" + password2 + ".com")  
