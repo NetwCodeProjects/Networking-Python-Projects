@@ -1,3 +1,4 @@
+
 """\
 This is the second version ( v1.1)
 
@@ -237,11 +238,12 @@ Payment Calculator v1.1
 [+] Python program to calculate cost of monthly payments.
 
 [1.] Method one: quick
-Requires deposit amount
+Requires deposit amount.
 
 [2.] Method two: long
-Requires bootcamp cost
-Requires deposit amount
+Requires tuition cost.
+Requires deposit amount.
+Requires how many months payment plan is.
 
 ******** link to downl .py ********
 https://github.com/NetwCodeProjects/Networking-Python-Projects/blob/master/Payment%20Calculator%20v1.1%20.py
@@ -256,12 +258,14 @@ https://github.com/NetwCodeProjects/Networking-Python-Projects/blob/master/Payme
 
 # [+]"long" method - User inputs 
 # tution cost
-# [+] User inputs deposit amount
+# [+] input deposit amount
+# [+] input length of payment plan
+# how many months?
 # [1.] Program returns tuition cost after 
 # deposit
 # [2.] And monthly cost
 
-# [+] Program does not accept invalid 
+# [-] Program does not accept invalid 
 # method input
 # [!] Accepted input "quick" and "long"
 
@@ -291,16 +295,18 @@ if method == "quick":
 	.format(earlyprice))
 
 elif method == "long":
-	print("Input bootcamp cost")
+	print("Input tuition price")
 	a = int(input())
 	print("Input deposit amount")
 	b = int(input())
-	c = a - b
-	d = c / 6
+	print("How many months is payment plan?")
+	c = int(input())
+	d = a - b
+	e = d / c
 	print("Total cost after deposit {}"
-	.format(c))
-	print("Total monthly cost {}"
 	.format(d))
+	print("Total monthly cost {}"
+	.format(e))
 
 else:
 	print("[-] Error check spelling.")
