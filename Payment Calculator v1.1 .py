@@ -244,7 +244,7 @@ Requires bootcamp cost
 Requires deposit amount
 
 ******** link to downl .py ********
-https://github.com/NetwCodeProjects/Networking-Python-Projects/blob/master/2%20method%20monthly%20calc.py
+https://github.com/NetwCodeProjects/Networking-Python-Projects/blob/master/Payment%20Calculator%20v1.1%20.py
 **********************************
 """
 # [+]"quick" method - User inputs deposit
