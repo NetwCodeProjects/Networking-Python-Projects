@@ -13,7 +13,7 @@ print(host_name, '({})'.format(ip))
 #Try to locate using socket
 name = input('Enter name: ')
 soc.listen(1)
- print('Waiting for incoming connections...')
+print('Waiting for incoming connections...')
 
 connection, addr = soc.accept()
 print("Received connection from ", addr[0], "(", addr[1], ")\n")
