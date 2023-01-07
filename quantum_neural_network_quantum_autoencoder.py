@@ -1,4 +1,9 @@
-import qiskit
+"""
+This program provides a framework for building and training quantum autoencoders to perform dimensionality reduction, 
+using quantum backpropagation and the Adam optimizer to update the parameters of the quantum circuit 
+as the autoencoder learns from the data.
+
+"""import qiskit
 from qiskit.algorithms import VariationalAlgorithm
 from qiskit.utils import QuantumInstance
 from qiskit.opflow import OperatorBase
